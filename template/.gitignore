@@ -1,7 +1,6 @@
 # IDEs
 .idea
 .vs
-.vscode
-
+.DS_STORE
 target
 {% if crate_type == "lib" %}Cargo.lock{% endif %}

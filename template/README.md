@@ -7,6 +7,9 @@
 [![APACHE licensed](https://shields.io/github/license/{{gh-username}}/{{project-name}}.svg)](https://github.com/{{gh-username}}/{{project-name}}/blob/main/LICENSE-APACHE){% endif %}{% if license == "mit" or license == "both" %}
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/{{gh-username}}/{{project-name}}/blob/main/LICENSE-MIT){% endif %}
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![dependency status](https://deps.rs/repo/github/{{gh-username}}/{{project-name}}/status.svg)](https://deps.rs/repo/github/{{gh-username}}/{{project-name}})
+
+{{ project-description }}
 
 # Development
 

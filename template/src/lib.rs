@@ -1,4 +1,4 @@
-//! Project-level documentation.
+#![doc = include_str!("../README.md")]
 
 {% if nightly %}#![feature(lint_reasons)] // Checks for attributes that allow lints without a reason.
 {% endif %}#![allow(clippy::module_name_repetitions)]
@@ -63,11 +63,7 @@
     clippy::unseparated_literal_suffix,
     clippy::verbose_file_reads
 )]
-{% if crate_type == "bin" %}
-mod config;
 
-pub use config::CONFIG;
-{% endif %}
 #[cfg(test)]
 mod tests {
     #[test]

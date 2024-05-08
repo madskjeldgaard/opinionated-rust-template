@@ -80,6 +80,9 @@ ci:
     @just thorough-check
     cargo spellcheck check
 
+changelog:
+    git-cliff > CHANGELOG.md
+
 # Initializes the project, installing all tools necessary. Should be run once before begining of development.
 init:
     echo # installing git hooks
@@ -105,3 +108,4 @@ init:
     cargo binstall cargo-audit --no-confirm
     cargo binstall cargo-upgrades --no-confirm
     cargo binstall cargo-unused-features --no-confirm
+    cargo binstall git-cliff --no-confirm
