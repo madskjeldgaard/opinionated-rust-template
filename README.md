@@ -1,9 +1,10 @@
 # Opinionated Rust Template
+
 A template for your next Rust project.
 
 To start coding run:
 ```bash
-cargo generate tomkarw/opinionated-rust-template
+cargo generate madskjeldgaard/opinionated-rust-template
 ```
 
 Only requires `just` to bootstrap all tools and configuration:
@@ -36,6 +37,7 @@ Includes:
 - [cargo-audit] - audit `Cargo.lock` files for crates with security vulnerabilities reported to the [RustSec Advisory Database]
 - [cargo-upgrades] - shows which dependencies in `Cargo.toml` can be upgraded to a newer version
 - [cargo-unused-features]- allows you to find and prune enabled, but, potentially unused feature flags from your project
+- [git-cliff] automatic changelog generation
 
 ## Other recommended tools
 - [kondo] - save space by cleaning non-essential files from software projects. Finds and deletes `target` and `node_modules` folders
@@ -43,17 +45,6 @@ Includes:
 - [cargo-hack] - test each feature independently and all combinations of feature powerset
 - [cargo-modules] - plugin for showing an overview of a crate's modules
 - [cargo-geiger] - tool that lists statistics related to the usage of unsafe Rust code in a Rust crate and all its dependencies
-
-## TODO
-- [x] template project to provide `--bin` and `--lib` versions in `cargo-generate`
-- [x] add all commands from `just thorough-check` to CI
-- [x] add choice of FOSS licences (MIT/APACHE/both/neither)
-- [x] add comments to all of `just` commands
-- [ ] add confirmation for each of steps performed in `just thorough-check`
-- [ ] extend `pre-commit-rust` with all things in `just pre-commit`
-- [ ] investigate `cargo-sync-readme`
-- [ ] investigate `rust-semverver/cargo-public-api/cargo-semver-checks`
-- [ ] meta: speed up build-template CI run
 
 ## Similar projects
 
@@ -72,6 +63,9 @@ defined in the Apache-2.0 license, shall be dual licensed as above, without any 
 
 ## Authors
 
+This is a hardfork of [this great template](https://github.com/tomkarw/opinionated-rust-template). Thanks!
+
+Mads Kjeldgaard
 Tomasz Karwowski
 [LinkedIn]
 
